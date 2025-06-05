@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Eloi.Draw
 {
     [ExecuteInEditMode]
-    public class DrawMono_LinePath : MonoBehaviour
+    public class DrawMono_LinePath : DrawMono_AbstractDefault
     {
         private void Reset()
         {
@@ -18,17 +18,19 @@ namespace Eloi.Draw
                 }
             }
         }
-        public List<Transform> m_targets;
-        public Color m_color = Color.green;
-        void Update()
+
+        public override void DrawForSeconds(float seconds)
         {
-            if (enabled == false) return;
             if (m_targets == null || m_targets.Count == 0)
             {
                 return;
             }
             DebugDrawUility.LinePath(m_targets, m_color);
         }
+
+        public List<Transform> m_targets;
+        public Color m_color = Color.green;
+        
     }
 
 

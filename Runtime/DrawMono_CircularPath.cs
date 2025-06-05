@@ -6,7 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 namespace Eloi.Draw
 {
     [ExecuteInEditMode]
-    public class DrawMono_CircularPath : MonoBehaviour
+    public class DrawMono_CircularPath : DrawMono_AbstractDefault
     {
 
         private void Reset()
@@ -22,13 +22,13 @@ namespace Eloi.Draw
         }
         public List<Transform> m_targets;
         public Color m_color = Color.green;
-        void Update()
-        {
-            if (enabled == false) return;
+       
 
+        public override void DrawForSeconds(float seconds)
+        {
             if (m_targets == null || m_targets.Count == 0)
             {
-                 return;
+                return;
             }
             DebugDrawUility.CircularPath(m_targets, m_color);
         }

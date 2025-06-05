@@ -5,7 +5,7 @@ namespace Eloi.Draw {
 
 
     [ExecuteInEditMode]
-    public class DrawMono_ColorCross : MonoBehaviour
+    public class DrawMono_ColorCross : DrawMono_AbstractDefault
     {
 
         private void Reset()
@@ -19,10 +19,10 @@ namespace Eloi.Draw {
         public float m_radius = 1f;
         public Space m_space = Space.Self;
         public Color m_color = Color.pink;
-        void Update()
-        {
-            if(enabled == false) return;
+      
 
+        public override void DrawForSeconds(float seconds)
+        {
             if (m_target == null) return;
             DebugDrawUility.Cross(m_target, m_color, m_radius, m_space);
         }

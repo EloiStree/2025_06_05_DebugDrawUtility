@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 namespace Eloi.Draw
 {
     [ExecuteInEditMode]
-    public class DrawMono_CenterToCorner : MonoBehaviour
+    public class DrawMono_CenterToCorner : DrawMono_AbstractDefault
     {
         private void Reset()
         {
@@ -17,19 +17,17 @@ namespace Eloi.Draw
         public Color m_color = Color.red; 
 
 
-        void Update()
+        public override void DrawForSeconds(float seconds)
         {
-            if (enabled == false) return;
-
             if (m_center == null)
             {
-                return; 
+                return;
             }
             if (m_corner == null)
             {
                 return;
             }
-            DebugDrawUility.CenterToCorner(m_center,m_corner, m_color,0);
+            DebugDrawUility.CenterToCorner(m_center, m_corner, m_color, 0);
         }
     }
 

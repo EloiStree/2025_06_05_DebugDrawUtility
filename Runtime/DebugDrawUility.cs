@@ -155,14 +155,15 @@ public class DebugDrawUility
         }
     }
 
-    public static void RayLine(Transform target, Vector3 axis, float radius, Space space, Color color)
+    public static void RayLine(Transform target, Vector3 axis, float radius, Space space, Color color, float duration = 0)
     {
      
-        RayLine(target.position, target.rotation, axis, radius, space, color);
+        RayLine(target.position, target.rotation, axis, radius, space, color,duration);
     }
 
-    public static void RayLine(Vector3 position, Quaternion rotation, Vector3 axis, float radius, Space space, Color color)
+    public static void RayLine(Vector3 position, Quaternion rotation, Vector3 axis, float radius, Space space, Color color, float duration = 0)
     {
+        SetToDeltaTimeIfUnderZero(ref duration);
         Vector3 point = position;
         if (space == Space.Self)
         {
@@ -173,7 +174,7 @@ public class DebugDrawUility
             point += axis * radius;
         }
 
-        Debug.DrawLine(position, point, color);
+        Debug.DrawLine(position, point, color,duration);
 
 
     }

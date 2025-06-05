@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Eloi.Draw {
     [ExecuteInEditMode]
-    public class DrawMono_CartesianDirection : MonoBehaviour
+    public class DrawMono_CartesianDirection : DrawMono_AbstractDefault
     {
         private void Reset()
         {
@@ -21,9 +21,12 @@ namespace Eloi.Draw {
         public Space m_space = Space.Self;
         public Color m_lineColor = Color.yellow;
         public bool m_useNormalizedDirection = true;
-        void Update()
+        
+
+        public override void DrawForSeconds(float seconds)
         {
-            if (enabled == false) return;
+            if (m_cartesianReference == null) return;
+
             DebugDrawUility.Cartesian(m_cartesianReference, m_cartesianRadius, m_space);
 
             if (m_point != null)
@@ -35,8 +38,6 @@ namespace Eloi.Draw {
                 else
                     Debug.DrawLine(m_cartesianReference.position, m_point.position, m_lineColor);
             }
-
-            
         }
     }
 

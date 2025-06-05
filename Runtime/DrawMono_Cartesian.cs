@@ -7,7 +7,7 @@ namespace Eloi.Draw {
 
 
     [ExecuteInEditMode]
-    public class DrawMono_Cartesian : MonoBehaviour
+    public class DrawMono_Cartesian : DrawMono_AbstractDefault
     {
         private void Reset()
         {
@@ -19,9 +19,11 @@ namespace Eloi.Draw {
         public Transform m_target;
         public float m_radius = 1f;
         public Space m_space = Space.Self;
-        void Update()
+     
+
+        public override void DrawForSeconds(float seconds)
         {
-            if (enabled == false) return;
+            if (m_target == null) return;
             DebugDrawUility.Cartesian(m_target, m_radius, m_space);
         }
     }

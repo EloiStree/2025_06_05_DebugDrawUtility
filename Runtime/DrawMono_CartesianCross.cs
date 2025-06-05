@@ -5,7 +5,7 @@ namespace Eloi.Draw {
 
 
     [ExecuteInEditMode]
-    public class DrawMono_CartesianCross : MonoBehaviour
+    public class DrawMono_CartesianCross : DrawMono_AbstractDefault
     {
 
         private void Reset()
@@ -23,9 +23,14 @@ namespace Eloi.Draw {
         {
 
             if (enabled == false) return;
-            DebugDrawUility.CartersianCross(m_target, m_radiusPositive, m_radiusNegative, m_space);
         }
 
+        public override void DrawForSeconds(float seconds)
+        {
+            if (m_target == null) return;
+
+            DebugDrawUility.CartersianCross(m_target, m_radiusPositive, m_radiusNegative, m_space);
+        }
     }
 
 
