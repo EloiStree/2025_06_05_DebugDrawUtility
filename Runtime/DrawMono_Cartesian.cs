@@ -24,7 +24,7 @@ namespace Eloi.Draw {
         public override void DrawForSeconds(float seconds)
         {
             if (m_target == null) return;
-            DebugDrawUility.Cartesian(m_target, m_radius, m_space);
+            DebugDrawUility.Cartesian(m_target, m_radius, m_space, seconds);
         }
     }
 

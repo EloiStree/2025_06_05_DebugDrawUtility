@@ -13,12 +13,12 @@ namespace Eloi.Draw {
             m_target = transform;
             m_radius = 1f;
             m_space = Space.Self;
-            m_color = Color.pink;
+            m_color = Color.blue;
         }
         public Transform m_target;
         public float m_radius = 1f;
         public Space m_space = Space.Self;
-        public Color m_color = Color.pink;
+        public Color m_color = Color.blue;
       
 
         public override void DrawForSeconds(float seconds)

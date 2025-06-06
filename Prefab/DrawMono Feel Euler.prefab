@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &795266325642719064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3174143155221572019}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3174143155221572019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795266325642719064}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1061752589316548277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5969713193099267399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1061752589316548277}
+  m_Layer: 0
+  m_Name: DrawMono Feel Euler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061752589316548277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5969713193099267399}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18505, y: 0, z: -0.04049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5729364223976172146}
+  - {fileID: 6992495311322018433}
+  - {fileID: 3174143155221572019}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1057287407792679068
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1061752589316548277}
+    m_Modifications:
+    - target: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_Name
+      value: DrawMono RayLine Cartesian
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7407985535640775476, guid: 68dee498cf5c652458651342431cb624, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3031434765361550029}
+    - targetCorrespondingSourceObject: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 389994384775594805}
+  m_SourcePrefab: {fileID: 100100000, guid: 68dee498cf5c652458651342431cb624, type: 3}
+--- !u!1 &3670475988881302637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+  m_PrefabInstance: {fileID: 1057287407792679068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3031434765361550029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670475988881302637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a35955b0d590d4b9fcae41dcea9cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_target: {fileID: 6992495311322018433}
+  m_radius: 1
+  m_space: 1
+--- !u!114 &389994384775594805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3670475988881302637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a13aed9436d90b43bebbe41a5e07397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onTick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3031434765361550029}
+        m_TargetAssemblyTypeName: Eloi.Draw.DrawMono_Cartesian, be.elab.debugdrawutility
+        m_MethodName: DrawForSeconds
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!4 &6992495311322018433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+  m_PrefabInstance: {fileID: 1057287407792679068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2316154625553166447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1061752589316548277}
+    m_Modifications:
+    - target: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_Name
+      value: DrawMono RayLine Lag
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2024685144715540420}
+  m_SourcePrefab: {fileID: 100100000, guid: 68dee498cf5c652458651342431cb624, type: 3}
+--- !u!1 &2051593456192486558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4349381287583616241, guid: 68dee498cf5c652458651342431cb624, type: 3}
+  m_PrefabInstance: {fileID: 2316154625553166447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024685144715540420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051593456192486558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a13aed9436d90b43bebbe41a5e07397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onTick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5110127367852972891}
+        m_TargetAssemblyTypeName: Eloi.Draw.DrawMono_RayLine, be.elab.debugdrawutility
+        m_MethodName: DrawForSeconds
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+--- !u!114 &5110127367852972891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7407985535640775476, guid: 68dee498cf5c652458651342431cb624, type: 3}
+  m_PrefabInstance: {fileID: 2316154625553166447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051593456192486558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1decdb12e1f0247a512fb3ab2fd00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &5729364223976172146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8045232390078405149, guid: 68dee498cf5c652458651342431cb624, type: 3}
+  m_PrefabInstance: {fileID: 2316154625553166447}
+  m_PrefabAsset: {fileID: 0}
