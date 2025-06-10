@@ -271,4 +271,15 @@ public class DebugDrawUility
     {
         world = rotation * local + position;
     }
+
+    public static void DrawLine(Vector3 localPoint, Color color, float duration = 0)
+    {
+        SetToDeltaTimeIfUnderZero(ref duration);
+        DrawLine(Vector3.zero, localPoint, color, duration);
+    }
+    public static void DrawLine(Vector3 from, Vector3 to, Color color, float duration=0)
+    {
+        SetToDeltaTimeIfUnderZero(ref duration);
+        Debug.DrawLine(from, to, color, duration);
+    }
 }
